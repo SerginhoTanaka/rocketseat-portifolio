@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import photo from './assets/foto_rosto.jpg'
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div className="App-body">
+
+        <div className='container'>
+        <div className='profile'>
+          <img src={photo} alt='photo' />
+        </div>
+
+          <ul className='list'>
+            <li className='list-item'><a href='https://github.com/SerginhoTanaka'> Meu GitHub </a></li>
+            <li className='list-item'><a href='https://www.linkedin.com/in/sergio-kenji-sawasaki-tanaka-528822231/'> Meu Linkedin </a></li>
+
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
